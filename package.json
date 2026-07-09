@@ -1,12 +1,15 @@
 {
   "name": "tempurawaves-web",
   "private": true,
+  "homepage": "https://russellmt.github.io/tempurawaves-web",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -21,6 +24,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.6.2",
     "vite": "^6.0.3"
   }
