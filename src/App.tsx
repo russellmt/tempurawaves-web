@@ -11,7 +11,7 @@ export default function App() {
   return (
     <ThemeProvider theme={globalTheme}>
       <CssBaseline />
-      <BrowserRouter basename="/tempurawaves-web">
+      <BrowserRouter>
         <Routes>
           <Route element={<AppLayout />}>
             <Route path="/" element={<HomePage />} />
