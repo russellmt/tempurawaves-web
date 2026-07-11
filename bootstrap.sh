@@ -25,6 +25,11 @@ case "$MODE" in
     npm run build
     npm run preview
     ;;
+  deploy)
+    echo "Deploying to production..."
+    npm run build
+    npm run deploy
+    ;;
   *)
     echo "Usage: ./bootstrap.sh [dev|build|preview]"
     exit 1
