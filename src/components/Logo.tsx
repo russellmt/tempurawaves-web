@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Box } from '@mui/material';
 import { siteConfig } from '../content/siteConfig';
+import logo from '@/assets/logo.svg';
 
 interface LogoProps {
   height?: number;
@@ -21,7 +22,7 @@ export function Logo({ height = 40 }: LogoProps) {
     >
       <Box
         component="img"
-        src="/logo.svg"
+        src={logo}
         alt="Tempura Waves logo"
         sx={{ height, width: 'auto' }}
       />
