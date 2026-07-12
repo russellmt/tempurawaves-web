@@ -1,8 +1,14 @@
 export type ArtistGroup = 'producers' | 'collaborators';
 
+export interface ArtistLink {
+  slug: string;
+  name: string;
+}
+
 export interface Track {
   title: string;
   duration: string;
+  feat?: ArtistLink;
 }
 
 export interface Album {
@@ -21,6 +27,7 @@ export interface Artist {
   themeId: ThemeId;
   image: string;
   albums: Album[];
+  compilations?: Album[];
 }
 
 export type ThemeId =

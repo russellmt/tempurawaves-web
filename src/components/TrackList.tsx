@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import type { Track } from '../types/content';
+import { Link } from 'react-router-dom';
 
 interface TrackListProps {
   tracks: Track[];
@@ -23,7 +24,22 @@ export function TrackList({ tracks, chiptune = false }: TrackListProps) {
           }}
         >
           <Typography variant="body2" component="span">
-            {i + 1}. {track.title}
+            {i + 1}. {track.title} 
+            {track.feat ? (
+              <>
+                {' ('}feat.{' '}
+                <Link
+                  to={`/artists/${track.feat.slug}`}
+                  style={{
+                    color: 'inherit',
+                    fontWeight: 700,
+                    textDecoration: 'none',
+                  }}
+                >
+                    {track.feat.name}{')'}
+                </Link>
+              </>
+            ) : null}
           </Typography>
           <Typography variant="body2" component="span" sx={{ opacity: 0.7 }}>
             {track.duration}

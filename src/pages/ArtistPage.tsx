@@ -17,7 +17,7 @@ export function ArtistPage() {
   return (
     <ThemedPage themeId={artist.themeId}>
       <ArtistHero artist={artist} chiptune={isChiptune} />
-      <AlbumGrid albums={artist.albums} chiptune={isChiptune} />
+      <AlbumGrid albums={artist.albums} compilations={artist.compilations} chiptune={isChiptune} />
     </ThemedPage>
   );
 }
