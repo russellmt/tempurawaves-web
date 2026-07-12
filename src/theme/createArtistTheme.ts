@@ -50,5 +50,10 @@ export function getThemeStyles(themeId: string) {
     backgroundImage: config.backgroundImage,
     color: config.text,
     motifClass: config.motifClass,
+    backgroundSize: config.backgroundSize,
+    backgroundPosition: config.backgroundPosition,
+    backgroundRepeat: config.backgroundRepeat,
+    backgroundAttachment: config.backgroundAttachment,
+    backgroundOverlay: config.backgroundOverlay,
   };
 }

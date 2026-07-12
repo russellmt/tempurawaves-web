@@ -14,7 +14,7 @@ export const artists: Record<string, Artist> = {
     tagline: 'Electronic, melodic, experimental',
     bio: 'Primary producer of Tempura Waves. DJ Shuvohl crafts electronic melodic and experimental music rooted in lush green botanical aesthetics — synthesizers woven through organic textures like vines through forest canopy.',
     themeId: 'djShuvohl',
-    image: image('dj-shuvohl/profile.svg'),
+    image: image('dj-shuvohl/IMG_7963.jpg'),
     albums: [
       {
         title: 'The Darkness of Bright Auroras',

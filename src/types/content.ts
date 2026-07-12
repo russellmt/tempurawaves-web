@@ -47,6 +47,11 @@ export interface ThemeConfig {
   secondary: string;
   background: string;
   backgroundImage?: string;
+  backgroundOverlay?: string;
+  backgroundSize?: string;
+  backgroundPosition?: string;
+  backgroundRepeat?: string;
+  backgroundAttachment?: string;
   text: string;
   accent: string;
   motifClass: string;

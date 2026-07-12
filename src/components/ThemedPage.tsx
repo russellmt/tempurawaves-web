@@ -22,6 +22,20 @@ export function ThemedPage({ themeId, children }: ThemedPageProps) {
           color: styles.color,
           pt: 2,
           pb: 6,
+          backgroundSize: styles.backgroundSize,
+          backgroundPosition: styles.backgroundPosition,
+          backgroundRepeat: styles.backgroundRepeat,
+          backgroundAttachment: styles.backgroundAttachment,
+          '&::before': styles.backgroundOverlay
+            ? {
+                content: '""',
+                position: 'fixed',
+                inset: 0,
+                backgroundColor: styles.backgroundOverlay,
+                pointerEvents: 'none',
+                zIndex: 0,
+              }
+            : undefined,
         }}
       >
         <Box className="themed-content">{children}</Box>

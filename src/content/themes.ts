@@ -1,11 +1,17 @@
 import type { ThemeConfig } from '../types/content';
+import shuvohlBg from '@/assets/images/dj-shuvohl/IMG_9925.jpg';
 
 export const themes: Record<string, ThemeConfig> = {
   djShuvohl: {
     id: 'djShuvohl',
     primary: '#2d6a4f',
     secondary: '#40916c',
-    background: 'linear-gradient(160deg, #0d1f17 0%, #1b4332 40%, #2d6a4f 100%)',
+    background: `url(${shuvohlBg})`,
+    backgroundOverlay: 'rgba(0, 0, 0, 0.60)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
     text: '#d8f3dc',
     accent: '#95d5b2',
     motifClass: 'motif-plants',
